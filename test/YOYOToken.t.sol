@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.17;
 
 import "forge-std/Test.sol";
 
-import "src/Contract.sol";
+import "src/YOYOToken.sol";
 
 contract TestContract is Test {
-    Contract c;
+    YOYOToken c;
 
     function setUp() public {
-        c = new Contract();
+        c = new YOYOToken();
     }
 
     function testBar() public {
