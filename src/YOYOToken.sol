@@ -5,7 +5,7 @@ import "openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
 
 contract YOYOToken is ERC20 {
     constructor() ERC20("YOYOToken", "YOYO") {
-        _mint(msg.sender, 1000000000 * decimals());
+        _mint(msg.sender, 1000000000 ** decimals());
     }
 
     function decimals() public pure override returns (uint8) {
